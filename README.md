@@ -55,8 +55,11 @@ The compiled html loaded with [cheeriojs/cheerio](https://github.com/cheeriojs/c
 ## Plugins
 
 - [magu-plugin-toc](https://github.com/nju33/magu-plugin-toc)
+- [magu-plugin-hljs](https://github.com/nju33/magu-plugin-hljs)
+- [magu-plugin-anchor](https://github.com/nju33/magu-plugin-anchor)
+- [magu-plugin-footnote](https://github.com/nju33/magu-plugin-footnote)
 
-## LICENSE
+## License
 
->The MIT License (MIT)
->Copyright (c) 2016 nju33 <nju33.ki@gmail.com>
+The MIT License (MIT)
+Copyright (c) 2016 nju33 <nju33.ki@gmail.com>
