@@ -19,6 +19,9 @@ magu({ Methods of marked.Renderer }, [ Magu plugins ])
   .then(html => console.log(html));
 ```
 
+`.process()` method expects **absolute path** or **content** to be passed.
+If the passed in is absolute path, there is a process of reading the contents of the file
+
 ### Methods of `marked.Renderer`
 
 Look at the [marked#block-level-renderer-methods](https://github.com/chjj/marked#block-level-renderer-methods) section.
