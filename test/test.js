@@ -65,7 +65,7 @@ test('markdown compile', async t => {
 });
 
 test('Pass content instead of absolute path', async t => {
-  const result = await maku({}, []).process('aiueo');
+  const result = await magu({}, []).process('aiueo');
   t.truthy(result.html);
   t.is(result.html, '<p>aiueo</p>\n');
 });
