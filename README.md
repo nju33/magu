@@ -19,6 +19,9 @@ magu({ Methods of marked.Renderer }, [ Magu plugins ])
   .then(html => console.log(html));
 ```
 
+`.process()` method expects **absolute path** or **content** to be passed.
+If the passed in is absolute path, there is a process of reading the contents of the file
+
 ### Methods of `marked.Renderer`
 
 Look at the [marked#block-level-renderer-methods](https://github.com/chjj/marked#block-level-renderer-methods) section.
@@ -55,8 +58,11 @@ The compiled html loaded with [cheeriojs/cheerio](https://github.com/cheeriojs/c
 ## Plugins
 
 - [magu-plugin-toc](https://github.com/nju33/magu-plugin-toc)
+- [magu-plugin-hljs](https://github.com/nju33/magu-plugin-hljs)
+- [magu-plugin-anchor](https://github.com/nju33/magu-plugin-anchor)
+- [magu-plugin-footnote](https://github.com/nju33/magu-plugin-footnote)
 
-## LICENSE
+## License
 
->The MIT License (MIT)
->Copyright (c) 2016 nju33 <nju33.ki@gmail.com>
+The MIT License (MIT)
+Copyright (c) 2016 nju33 <nju33.ki@gmail.com>
