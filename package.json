@@ -2,6 +2,7 @@
   "name": "magu",
   "version": "0.0.1",
   "description": "Markdown compiler to based on Marked",
+  "repositoty": "nju33/magu",
   "main": "./magu.js",
   "scripts": {
     "start": "gulp watch",
@@ -20,6 +21,7 @@
   "dependencies": {
     "cheerio": "^0.22.0",
     "marked": "^0.3.6",
+    "p-is-promise": "^1.1.0",
     "pupa": "^1.0.0"
   },
   "devDependencies": {

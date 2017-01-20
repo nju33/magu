@@ -1,7 +1,7 @@
 import test from 'ava';
 import {spy} from 'sinon';
 import cheerio from 'cheerio';
-import maku, {
+import magu, {
   funcs,
   formatArguments,
   createStringTemplateFunc
@@ -37,7 +37,7 @@ test('createStringTempalteFunc', t => {
 
 test('plugin call', async t => {
   const plugin = spy();
-  await maku({}, [plugin]).process(`${__dirname}/fixtures.md`);
+  await magu({}, [plugin]).process(`${__dirname}/fixtures.md`);
 
   const pluginCall = plugin.getCall(0);
   t.true(plugin.called);
@@ -45,8 +45,21 @@ test('plugin call', async t => {
   t.is(pluginCall.args[1], cheerio);
 });
 
+test('promise plugin', async t => {
+  const plugin = () => {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve(cheerio.load('aieuo'));
+      });
+    });
+  };
+
+  const result = await magu({}, [plugin]).process(`${__dirname}/fixtures.md`);
+  t.is(result.html, '<p>aiueo</p>\n');
+});
+
 test('markdown compile', async t => {
-  const result = await maku({}, []).process(`${__dirname}/fixtures.md`);
+  const result = await magu({}, []).process(`${__dirname}/fixtures.md`);
   t.truthy(result.html);
   t.is(result.html, '<p>aiueo</p>\n');
 });
