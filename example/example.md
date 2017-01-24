@@ -2,27 +2,6 @@
 
 ladjflaksjdf
 
-## iiii
-## uuuu
-
-### eeeee
-
-## oooooo
-
-# alkdjfasdf
-
-## wwwwwwwwwwwwwww
-
+```js
+console.log(123);
 ```
-asldjfalsdjfsakf
-asdf
-asdfasd
-fasdf
-```
-
-> lkjsdfljasdf
-adlfkjasdljfasldf
-alkdjfasdf
-
-
-[alsdfjalsdjf](alsdjfakjflaksjfasdjfkfjlsdkfj)

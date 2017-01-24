@@ -69,3 +69,13 @@ test('Pass content instead of absolute path', async t => {
   t.truthy(result.html);
   t.is(result.html, '<p>aiueo</p>\n');
 });
+
+test('Set method', async t => {
+  const result = await magu({
+    heading(text) {
+      return `foo${text}`;
+    }
+  }, []).process('# aiueo');
+
+  t.is(result.html, 'fooaiueo');
+});

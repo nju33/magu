@@ -1,3 +1,6 @@
+## 0.0.4
+- Fix that execute method of renderer
+
 ## 0.0.3
 - Support plugin that returns promise
 

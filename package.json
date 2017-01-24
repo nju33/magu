@@ -44,6 +44,7 @@
     "gulp-plumber": "^1.1.0",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-util": "^3.0.7",
+    "highlight.js": "^9.9.0",
     "sinon": "^1.17.7",
     "xo": "^0.17.1"
   },
