@@ -1,6 +1,6 @@
 {
   "name": "magu",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Markdown compiler to based on Marked",
   "repositoty": "nju33/magu",
   "main": "./magu.js",
