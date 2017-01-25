@@ -1,3 +1,6 @@
+## 0.0.5
+- Fix executing process when apply multiple plugins
+
 ## 0.0.4
 - Fix that execute method of renderer
 
